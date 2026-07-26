@@ -1,0 +1,241 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+body{
+    background:#f4f7fb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background:linear-gradient(90deg,#0d6efd,#0a58ca)!important;
+}
+
+.container{
+    margin-top:30px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.card-header{
+    background:#fff;
+    border-bottom:1px solid #eee;
+    font-weight:bold;
+}
+
+.shadow{
+    box-shadow:0 10px 25px rgba(0,0,0,.08)!important;
+}
+
+/* ===========================
+   STATISTICS
+=========================== */
+
+.stat-card{
+    color:white;
+    text-align:center;
+}
+
+.stat-card:nth-child(1),
+.row .col-md-4:nth-child(1) .stat-card{
+    background:linear-gradient(135deg,#0d6efd,#3b82f6);
+}
+
+.row .col-md-4:nth-child(2) .stat-card{
+    background:linear-gradient(135deg,#dc3545,#ff6b6b);
+}
+
+.row .col-md-4:nth-child(3) .stat-card{
+    background:linear-gradient(135deg,#198754,#43c463);
+}
+
+.stat-card h2{
+    font-size:40px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+label{
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.form-control,
+.form-select{
+    height:48px;
+    border-radius:10px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 8px rgba(13,110,253,.25);
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+    border-radius:10px;
+    padding:10px 25px;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:#0d6efd;
+}
+
+.btn-primary:hover{
+    background:#0b5ed7;
+}
+
+.btn-secondary:hover{
+    background:#6c757d;
+}
+
+/* ===========================
+   RESULT
+=========================== */
+
+#prediction{
+    font-size:40px;
+    font-weight:bold;
+}
+
+#probability,
+#risk{
+    font-weight:bold;
+}
+
+.low{
+    color:#198754;
+}
+
+.medium{
+    color:#ffc107;
+}
+
+.high{
+    color:#dc3545;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:#0d6efd;
+    color:white;
+}
+
+.table tbody tr:hover{
+    background:#eef5ff;
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+.card{
+    animation:fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .stat-card h2{
+        font-size:30px;
+    }
+
+    #prediction{
+        font-size:28px;
+    }
+
+    .btn{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+}
+.form-control,
+.form-select{
+
+    border-radius:12px;
+
+}
+
+.btn{
+
+    border-radius:12px;
+    font-weight:600;
+
+}
+
+.card{
+
+    border:none;
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.table{
+
+    border-radius:12px;
+    overflow:hidden;
+
+}
+
+.table thead{
+
+    background:#0d6efd;
+    color:white;
+
+}
+
+.table-hover tbody tr:hover{
+
+    background:#eef5ff;
+
+}
